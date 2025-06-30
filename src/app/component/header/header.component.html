@@ -4,10 +4,10 @@
       <img src="./assets/img/logoMain.png" alt="" class="logo-header">
       <div class="menu-group">
         <a routerLink="">{{ 'home' | translate }}</a>
-        <a href="/news">{{ 'newsAndEvent' | translate }}</a>
-        <a href="/product-and-service">{{ 'productAndService' | translate }}</a>
-        <a routerLink="/about">{{ 'aboutMe' | translate }}</a>
-        <a routerLink="/contact">{{ 'contactUs' | translate }}</a>
+        <a routerLink="./news">{{ 'newsAndEvent' | translate }}</a>
+        <a routerLink="./product-and-service">{{ 'productAndService' | translate }}</a>
+        <a routerLink="./about">{{ 'aboutMe' | translate }}</a>
+        <a routerLink="./contact">{{ 'contactUs' | translate }}</a>
         <select name="" class="dropdown-lang" #langSelect (change)="changeLanguage(langSelect.value)" [(ngModel)]="langLocal">
           <option value="{{i.value}}" *ngFor="let i of langList; let idx = index;">{{i.name}}</option>
         </select>
